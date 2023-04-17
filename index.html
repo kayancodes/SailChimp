@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SailChimp HTML Email Template</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+
+        body {
+            margin: 0;
+            /* enleve tout espace autour du template */
+            background-color: #ccc;
+        }
+
+        table {
+            border-spacing: 0;
+        }
+
+        td {
+            padding: 0;
+        }
+
+        img {
+            border: 0;
+        }
+
+        /* ESPACE GRISE QUI CONTIENT LE TEMPLATE */
+        .wrapper {
+            width: 100%;
+            /*comme ca si on reduit la taille de l'ecran il n'yaura pas d'espace gris entre le template et le bord de l'ecran */
+            table-layout: fixed;
+            /* pour fixer le template au centre */
+            background-color: #e5dec7;
+            padding-bottom: 60px;
+        }
+
+        /* LE MAIN = LE TEMPLATE */
+        .main {
+            width: 100%;
+            max-width: 600px;
+            background-color: #fff;
+            font-family: sans-serif;
+            border-spacing: 0;
+            color: #4a4a4a;
+            box-shadow: 0 0 25px rgba(0, 0, 0, .15);
+            text-align: center;
+        }
+
+        .social {
+            width: 38px;
+        }
+
+        .social-media {
+            padding: 12px 0 12px 62px;
+        }
+
+        .two-columns {
+            text-align: center;
+            font-size: 0;
+            /* font-size 0 : pour retirer les extra-space des images et links */
+        }
+
+        .two-columns .column {
+            width: 100%;
+            max-width: 295px;
+            display: inline-block;
+            /*MAX WIDTH 295 et DISPLAY INLINE BLOCK permettent de faire l'effet RESPONSIVE. En effet 
+            la taille max de 295px permet au deux colonne detre EN LIGNE quand la largeur du template est > à 600
+            mais quand la largeur est < à 600, les deux colonnes ne peuvent se tenir au meme niveau donc l'un descend.*/
+            vertical-align: top;
+        }
+
+        h3 {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 28px;
+        }
+
+        .button {
+            background-color: #2b2e33;
+            color: #fff;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        h4 {
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 22px;
+        }
+
+        .three-columns {
+            font-size: 0;
+            padding: 35px 0 20px;
+
+        }
+
+        .three-columns .column {
+            max-width: 200px;
+            display: inline-block;
+            vertical-align: top;
+            text-align: center;
+        }
+
+        .three-columns .padding {
+            padding: 25px;
+        }
+
+        .three-columns .content {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        .two-columns.last {
+            padding: 35px 0;
+        }
+
+        .two-columns .padding {
+            padding: 20px;
+        }
+
+        .two-columns .content {
+            font-size: 15px;
+            line-height: 20px;
+            text-align: left;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+
+    <center class="wrapper">
+        <!-- centrer le template au centre de la boite mail -->
+
+        <table class="main" width="100%">
+
+            <!-- TOP BORDER Begining -->
+            <tr>
+                <td height="8" style="background-color: #000;"></td>
+            </tr>
+            <!-- TOP BORDER Ending-->
+
+
+            <!-- LOGO and SOCIAL MEDIA SECTION Begining -->
+            <tr>
+                <td style="padding:14px 0 4px;">
+                    <table width="100%">
+                        <tr>
+                            <td class="two-columns">
+
+                                <!-- LOGO begining -->
+                                <table class="column">
+                                    <tr>
+                                        <td style="padding:0 22px 10px ;">
+                                            <a href="https://google.fr"><img src="img/logo.png" alt="SailChimp"
+                                                    width="250" title="SailChimp">
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- LOGO ending -->
+
+                                <!-- NAV begining -->
+                                <table class="column">
+                                    <tr>
+                                        <td class="social-media">
+                                            <a href="#"><img src="img/facebook.png" alt="" width="30"
+                                                    class="social"></a>
+                                            <a href="#"><img src="img/twitter.png" alt="" width="30" class="social"></a>
+                                            <a href="#"><img src="img/youtube.png" alt="" width="30" class="social"></a>
+                                            <a href="#"><img src="img/linkedin.png" alt="" width="30"
+                                                    class="social"></a>
+                                            <a href="#"><img src="img/instagram.png" alt="" width="30"
+                                                    class="social"></a>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- NAV ending -->
+
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- LOGO and SOCIAL MEDIA SECTION Ending -->
+
+
+            <!-- BANNER IMAGE  Begining-->
+            <tr>
+                <td>
+                    <table>
+                        <a href="#"><img src="img/banner.jpg" alt="" width="600" style="max-width:100%"></a>
+                    </table>
+                </td>
+            </tr>
+            <!-- BANNER IMAGE  Ending-->
+
+
+            <!-- TITLE, TEXT 1 & BUTTON Begining -->
+            <tr>
+                <td style="padding: 20px 15px 50px;">
+                    <table width="100%">
+
+                        <tr>
+                            <td>
+                                <h3>HTML Email Template <span style="color:#c89800">Course</span></h3>
+                                <p style="line-height:23px; font-size: 15px; padding:0 0 22px;">Responsive HTML Email
+                                    Templates that you
+                                    can build arround. Responsive HTML Email
+                                    Templates that you can build arround. Responsive HTML Email Templates that you can
+                                    build arround. Responsive HTML Email Templates that you can build arround.</p>
+                                <a href="#" class="button">View Course</a>
+                            </td>
+                        </tr>
+
+                    </table>
+                </td>
+            </tr>
+            <!-- TITLE, TEXT 1 & BUTTON Ending -->
+
+
+            <!-- TOP BORDER Begining -->
+            <tr>
+                <td height="3" style="background-color: #000;"></td>
+            </tr>
+            <!-- TOP BORDER Ending-->
+
+
+
+            <!-- THREE COLUMN SECTION bengining -->
+
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="three-columns">
+
+                                <!-- DEBUT COLONNE EMAIL DESIGN -->
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="img/design.png" alt="" width="150"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding:5px 0 10px">
+                                                        <h4>Email Design</h4>
+                                                        <p>Responsive HTML Email Template Course to master email
+                                                            development.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- FIN COLONNE EMAIL DESIGN -->
+
+
+                                <!-- DEBUT COLONNE EMAIL MARKETING -->
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="img/marketing.png" alt="" width="150"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding:5px 0 10px">
+                                                        <h4>Email Marketing</h4>
+                                                        <p>Responsive HTML Email Template Course to master email
+                                                            development.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- FIN COLONNE EMAIL MARKETING -->
+
+
+
+                                <!-- DEBUT COLONNE EMAIL MARKETING -->
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <a href="#"><img src="img/development.png" alt=""
+                                                                width="150"></a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="padding:5px 0 10px">
+                                                        <h4>Development</h4>
+                                                        <p>Responsive HTML Email Template Course to master email
+                                                            development.</p>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- FIN COLONNE EMAIL MARKETING -->
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- THREE COLUMN SECTION Ending -->
+
+
+            <!-- TOP BORDER Begining -->
+            <tr>
+                <td height="3" style="background-color: #000;"></td>
+            </tr>
+            <!-- TOP BORDER Ending-->
+
+
+
+            <!-- TWO COLUMN SECTION bengining -->
+            <tr>
+                <td>
+                    <table width="100%">
+                        <tr>
+                            <td class="two-columns last">
+
+                                <!-- DEBUT COLONNE IMAGE-->
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+                                                        <a href=""><img src="img/palette.png" alt="" width="260"></a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- FIN COLONNE IMAGE-->
+
+                                <!-- DEBUT COLONNE IMAGE-->
+                                <table class="column">
+                                    <tr>
+                                        <td class="padding">
+
+                                            <table class="content">
+                                                <tr>
+                                                    <td>
+
+                                                        <h4>Create Custom Designs</h4>
+                                                        <p>
+                                                            Over the years we have built up a massive portfolio our
+                                                            client website and email designs.
+                                                        </p>
+                                                        <p style="padding-bottom: 15px;">
+                                                            We would loe to share thel with you,get to know our !
+                                                        </p>
+                                                        <a href="#" class="button">HTML Email Course</a>
+
+                                                    </td>
+                                                </tr>
+                                            </table>
+
+                                        </td>
+                                    </tr>
+                                </table>
+                                <!-- FIN COLONNE IMAGE-->
+
+
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- TWO COLUMN SECTION Ending -->
+
+
+
+
+            <!-- FOOTER Begining -->
+
+            <tr>
+                <td style="background-color:#2b2e33; color:#fff;">
+                    <table width="100%">
+
+                        <tr>
+                            <td style="padding:45px 20px">
+
+                                <a href=""><img src="img/logo.png" alt="" width="260"></a>
+                                <p style="padding:5px 0 1px">SailChimp HTML Email Template</p>
+                                <p style="padding:5px">123 Street Road, City, State 55555</p>
+
+
+                                <a href="#"><img src="img/facebook.png" alt="" width="30" class="social"></a>
+                                <a href="#"><img src="img/twitter.png" alt="" width="30" class="social"></a>
+                                <a href="#"><img src="img/youtube.png" alt="" width="30" class="social"></a>
+                                <a href="#"><img src="img/linkedin.png" alt="" width="30" class="social"></a>
+                                <a href="#"><img src="img/instagram.png" alt="" width="30" class="social"></a>
+
+                                <p style="padding: 10px">SUBSCRIBE</p>
+
+                            </td>
+                        </tr>
+
+
+                        <!-- TOP BORDER Begining -->
+                        <tr>
+                            <td height="10" style="background-color: #000;"></td>
+                        </tr>
+                        <!-- TOP BORDER Ending-->
+
+
+
+
+
+                    </table>
+                </td>
+            </tr>
+
+
+            <!-- FOOTER Ending -->
+
+
+
+
+
+
+
+
+
+        </table>
+
+    </center>
+
+
+
+</body>
+
+</html>
